@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import section_1 from '../app/assets/section_1.svg';
 import section_2 from '../app/assets/section_2.svg';
 import section_3 from '../app/assets/section_3.svg';
@@ -10,111 +9,81 @@ export default function Home() {
   return (
     <main style={{ margin: 0, padding: '0 0 20px 0', width: '100%' }}>
       <div className="image-container">
-        <Image
-          src={section_1}
+        <img
+          src={section_1.src}
           alt="Homepage Section 1"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
       <div className="image-container">
-        <Image
-          src={section_2}
+        <img
+          src={section_2.src}
           alt="Homepage Section 2"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
       <div className="image-container">
-        <Image
-          src={section_3}
+        <img
+          src={section_3.src}
           alt="Homepage Section 3"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
       <div className="image-container">
-        <Image
-          src={section_4}
+        <img
+          src={section_4.src}
           alt="Homepage Section 4"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
       <div className="image-container">
-        <Image
-          src={section_5}
+        <img
+          src={section_5.src}
           alt="Homepage Section 5"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
       <div className="image-container">
-        <Image
-          src={section_6}
+        <img
+          src={section_6.src}
           alt="Homepage Section 6"
-          priority
-          width={1920}
-          height={1080}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             margin: 0,
-            padding: 0,
-            maxWidth: '100vw'
+            padding: 0
           }}
-          sizes="100vw"
         />
       </div>
     </main>
