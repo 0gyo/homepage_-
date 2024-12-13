@@ -1,0 +1,112 @@
+/* 섹션 레이아웃 그리드 */
+.section-layout-grid {
+  display: grid;
+  gap: var(--spacing-medium);
+}
+
+.section-layout-grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-layout-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-layout-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-layout-grid.gap-small {
+  gap: var(--spacing-small);
+}
+
+.section-layout-grid.gap-medium {
+  gap: var(--spacing-medium);
+}
+
+.section-layout-grid.gap-large {
+  gap: var(--spacing-large);
+}
+
+/* 섹션 레이아웃 분할 */
+.section-layout-split {
+  display: flex;
+  gap: var(--spacing-large);
+}
+
+.section-layout-split.direction-horizontal {
+  flex-direction: row;
+}
+
+.section-layout-split.direction-vertical {
+  flex-direction: column;
+}
+
+.section-layout-split.ratio-1-1 > * {
+  flex: 1;
+}
+
+.section-layout-split.ratio-1-2 > *:first-child {
+  flex: 1;
+}
+
+.section-layout-split.ratio-1-2 > *:last-child {
+  flex: 2;
+}
+
+.section-layout-split.ratio-2-1 > *:first-child {
+  flex: 2;
+}
+
+.section-layout-split.ratio-2-1 > *:last-child {
+  flex: 1;
+}
+
+/* 섹션 레이아웃 캐러셀 */
+.section-layout-carousel {
+  display: flex;
+  gap: var(--spacing-medium);
+  overflow-x: auto;
+  padding: var(--spacing-medium) 0;
+  scroll-snap-type: x mandatory;
+}
+
+.section-layout-carousel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.section-layout-carousel.slides-2 > * {
+  width: calc(50% - var(--spacing-medium) / 2);
+}
+
+.section-layout-carousel.slides-3 > * {
+  width: calc(33.333% - var(--spacing-medium) * 2 / 3);
+}
+
+.section-layout-carousel.slides-4 > * {
+  width: calc(25% - var(--spacing-medium) * 3 / 4);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .section-layout-grid.cols-2,
+  .section-layout-grid.cols-3,
+  .section-layout-grid.cols-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-layout-split {
+    flex-direction: column !important;
+  }
+
+  .section-layout-split > * {
+    flex: none !important;
+  }
+
+  .section-layout-carousel.slides-2 > *,
+  .section-layout-carousel.slides-3 > *,
+  .section-layout-carousel.slides-4 > * {
+    width: calc(100% - var(--spacing-medium));
+  }
+}

@@ -1,0 +1,27 @@
+:root {
+  /* 주요 색상 */
+  --color-primary: #007AFF;
+  --color-primary-light: #47A3FF;
+  --color-primary-dark: #0055B3;
+  
+  /* 보조 색상 */
+  --color-secondary: #6C757D;
+  --color-secondary-light: #A1A9B0;
+  --color-secondary-dark: #495057;
+  
+  /* 텍스트 색상 */
+  --color-text: #212529;
+  --color-text-light: #6C757D;
+  --color-text-disabled: #ADB5BD;
+  
+  /* 배경 색상 */
+  --color-bg: #FFFFFF;
+  --color-bg-light: #F8F9FA;
+  --color-bg-dark: #343A40;
+  
+  /* 상태 색상 */
+  --color-success: #28A745;
+  --color-error: #DC3545;
+  --color-warning: #FFC107;
+  --color-info: #17A2B8;
+} 
