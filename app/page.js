@@ -1,10 +1,9 @@
-import section_1 from '../app/assets/section_1.svg';
-import section_2 from '../app/assets/section_2.svg';
-import section_3 from '../app/assets/section_3.svg';
-import section_4 from '../app/assets/section_4.svg';
-import section_5 from '../app/assets/section_5.svg';
-import section_6 from '../app/assets/section_6.svg';
-import section_test from '../app/assets/section_test.svg';
+import section_1 from '../app/assets/section_1.optimized.svg';
+import section_2 from '../app/assets/section_2.optimized.svg';
+import section_3 from '../app/assets/section_3.optimized.svg';
+import section_4 from '../app/assets/section_4.optimized.svg';
+import section_5 from '../app/assets/section_5.optimized.svg';
+import section_6 from '../app/assets/section_6.optimized.svg';
 
 export default function Home() {
   return (
@@ -24,7 +23,7 @@ export default function Home() {
       </div>
       <div className="image-container">
         <img
-          src={section_test.src}
+          src={section_2.src}
           alt="Homepage Section 2"
           style={{
             width: '100%',
